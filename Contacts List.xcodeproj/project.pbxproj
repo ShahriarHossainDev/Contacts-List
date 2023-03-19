@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		FADAA71529C6C437007C8478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA71429C6C437007C8478 /* AppDelegate.swift */; };
 		FADAA71729C6C437007C8478 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA71629C6C437007C8478 /* SceneDelegate.swift */; };
-		FADAA71929C6C437007C8478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA71829C6C437007C8478 /* ViewController.swift */; };
 		FADAA71C29C6C437007C8478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADAA71A29C6C437007C8478 /* Main.storyboard */; };
 		FADAA71E29C6C438007C8478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADAA71D29C6C438007C8478 /* Assets.xcassets */; };
 		FADAA72129C6C438007C8478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADAA71F29C6C438007C8478 /* LaunchScreen.storyboard */; };
+		FADAA73329C6CA30007C8478 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73229C6CA30007C8478 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FADAA71129C6C437007C8478 /* Contacts List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contacts List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADAA71429C6C437007C8478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADAA71629C6C437007C8478 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FADAA71829C6C437007C8478 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FADAA71B29C6C437007C8478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FADAA71D29C6C438007C8478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADAA72029C6C438007C8478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADAA72229C6C438007C8478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADAA73229C6CA30007C8478 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,95 @@
 		FADAA71329C6C437007C8478 /* Contacts List */ = {
 			isa = PBXGroup;
 			children = (
-				FADAA71429C6C437007C8478 /* AppDelegate.swift */,
-				FADAA71629C6C437007C8478 /* SceneDelegate.swift */,
-				FADAA71829C6C437007C8478 /* ViewController.swift */,
-				FADAA71A29C6C437007C8478 /* Main.storyboard */,
-				FADAA71D29C6C438007C8478 /* Assets.xcassets */,
-				FADAA71F29C6C438007C8478 /* LaunchScreen.storyboard */,
+				FADAA72D29C6C4EC007C8478 /* Application */,
+				FADAA72C29C6C4C4007C8478 /* Constant */,
+				FADAA72B29C6C4B8007C8478 /* Extenstions */,
+				FADAA72A29C6C4AD007C8478 /* Serecns */,
+				FADAA72929C6C49F007C8478 /* Storyboard */,
+				FADAA72829C6C48C007C8478 /* Resourecs */,
 				FADAA72229C6C438007C8478 /* Info.plist */,
 			);
 			path = "Contacts List";
+			sourceTree = "<group>";
+		};
+		FADAA72829C6C48C007C8478 /* Resourecs */ = {
+			isa = PBXGroup;
+			children = (
+				FADAA71D29C6C438007C8478 /* Assets.xcassets */,
+			);
+			path = Resourecs;
+			sourceTree = "<group>";
+		};
+		FADAA72929C6C49F007C8478 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FADAA71A29C6C437007C8478 /* Main.storyboard */,
+				FADAA71F29C6C438007C8478 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FADAA72A29C6C4AD007C8478 /* Serecns */ = {
+			isa = PBXGroup;
+			children = (
+				FADAA72E29C6C51B007C8478 /* Home */,
+				FADAA73229C6CA30007C8478 /* MainViewController.swift */,
+			);
+			path = Serecns;
+			sourceTree = "<group>";
+		};
+		FADAA72B29C6C4B8007C8478 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		FADAA72C29C6C4C4007C8478 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		FADAA72D29C6C4EC007C8478 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FADAA71429C6C437007C8478 /* AppDelegate.swift */,
+				FADAA71629C6C437007C8478 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FADAA72E29C6C51B007C8478 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FADAA72F29C6C554007C8478 /* View */,
+				FADAA73029C6C55B007C8478 /* Model */,
+				FADAA73129C6C561007C8478 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FADAA72F29C6C554007C8478 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FADAA73029C6C55B007C8478 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FADAA73129C6C561007C8478 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FADAA71929C6C437007C8478 /* ViewController.swift in Sources */,
+				FADAA73329C6CA30007C8478 /* MainViewController.swift in Sources */,
 				FADAA71529C6C437007C8478 /* AppDelegate.swift in Sources */,
 				FADAA71729C6C437007C8478 /* SceneDelegate.swift in Sources */,
 			);
@@ -308,7 +388,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -338,7 +418,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

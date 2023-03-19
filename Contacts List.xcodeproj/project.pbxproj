@@ -16,6 +16,8 @@
 		FADAA73529C6CBEB007C8478 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73429C6CBEB007C8478 /* HomeViewController.swift */; };
 		FADAA73729C6CD0B007C8478 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73629C6CD0B007C8478 /* HomeModel.swift */; };
 		FADAA73929C6CDD7007C8478 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73829C6CDD7007C8478 /* HomeViewModel.swift */; };
+		FADAA73D29C6D0EF007C8478 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73B29C6D0EF007C8478 /* HomeTableViewCell.swift */; };
+		FADAA73E29C6D0EF007C8478 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADAA73C29C6D0EF007C8478 /* HomeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		FADAA73429C6CBEB007C8478 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FADAA73629C6CD0B007C8478 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		FADAA73829C6CDD7007C8478 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FADAA73B29C6D0EF007C8478 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		FADAA73C29C6D0EF007C8478 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		FADAA72F29C6C554007C8478 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FADAA73A29C6D03B007C8478 /* Custom Cell */,
 				FADAA73429C6CBEB007C8478 /* HomeViewController.swift */,
 			);
 			path = View;
@@ -154,6 +159,15 @@
 				FADAA73829C6CDD7007C8478 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FADAA73A29C6D03B007C8478 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FADAA73B29C6D0EF007C8478 /* HomeTableViewCell.swift */,
+				FADAA73C29C6D0EF007C8478 /* HomeTableViewCell.xib */,
+			);
+			path = "Custom Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +230,7 @@
 			files = (
 				FADAA72129C6C438007C8478 /* LaunchScreen.storyboard in Resources */,
 				FADAA71E29C6C438007C8478 /* Assets.xcassets in Resources */,
+				FADAA73E29C6D0EF007C8478 /* HomeTableViewCell.xib in Resources */,
 				FADAA71C29C6C437007C8478 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +244,7 @@
 			files = (
 				FADAA73729C6CD0B007C8478 /* HomeModel.swift in Sources */,
 				FADAA73929C6CDD7007C8478 /* HomeViewModel.swift in Sources */,
+				FADAA73D29C6D0EF007C8478 /* HomeTableViewCell.swift in Sources */,
 				FADAA73329C6CA30007C8478 /* MainViewController.swift in Sources */,
 				FADAA71529C6C437007C8478 /* AppDelegate.swift in Sources */,
 				FADAA71729C6C437007C8478 /* SceneDelegate.swift in Sources */,

@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSContactsUsageDescription</key>
+	<string>Access is needed to save your test app friends information to your Contacts list. </string>
 </dict>
 </plist>

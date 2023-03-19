@@ -13,6 +13,9 @@
 		FADAA71E29C6C438007C8478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADAA71D29C6C438007C8478 /* Assets.xcassets */; };
 		FADAA72129C6C438007C8478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADAA71F29C6C438007C8478 /* LaunchScreen.storyboard */; };
 		FADAA73329C6CA30007C8478 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73229C6CA30007C8478 /* MainViewController.swift */; };
+		FADAA73529C6CBEB007C8478 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73429C6CBEB007C8478 /* HomeViewController.swift */; };
+		FADAA73729C6CD0B007C8478 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73629C6CD0B007C8478 /* HomeModel.swift */; };
+		FADAA73929C6CDD7007C8478 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73829C6CDD7007C8478 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		FADAA72029C6C438007C8478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADAA72229C6C438007C8478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADAA73229C6CA30007C8478 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FADAA73429C6CBEB007C8478 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FADAA73629C6CD0B007C8478 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		FADAA73829C6CDD7007C8478 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,8 +125,8 @@
 		FADAA72E29C6C51B007C8478 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				FADAA72F29C6C554007C8478 /* View */,
 				FADAA73029C6C55B007C8478 /* Model */,
+				FADAA72F29C6C554007C8478 /* View */,
 				FADAA73129C6C561007C8478 /* ViewModel */,
 			);
 			path = Home;
@@ -129,6 +135,7 @@
 		FADAA72F29C6C554007C8478 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FADAA73429C6CBEB007C8478 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 		FADAA73029C6C55B007C8478 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FADAA73629C6CD0B007C8478 /* HomeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +151,7 @@
 		FADAA73129C6C561007C8478 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				FADAA73829C6CDD7007C8478 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -218,9 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADAA73729C6CD0B007C8478 /* HomeModel.swift in Sources */,
+				FADAA73929C6CDD7007C8478 /* HomeViewModel.swift in Sources */,
 				FADAA73329C6CA30007C8478 /* MainViewController.swift in Sources */,
 				FADAA71529C6C437007C8478 /* AppDelegate.swift in Sources */,
 				FADAA71729C6C437007C8478 /* SceneDelegate.swift in Sources */,
+				FADAA73529C6CBEB007C8478 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

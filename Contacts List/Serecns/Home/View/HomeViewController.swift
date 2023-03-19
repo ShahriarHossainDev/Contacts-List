@@ -6,12 +6,17 @@
 //
 
 import UIKit
+import ContactsUI
 
 class HomeViewController: UIViewController {
-
+    
+    var friendsList = Friend.defaultContacts()
+    
+    @IBOutlet weak var contactsTabelView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Contacts"
         // Do any additional setup after loading the view.
     }
 

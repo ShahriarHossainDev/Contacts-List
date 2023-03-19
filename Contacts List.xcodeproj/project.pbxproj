@@ -18,6 +18,8 @@
 		FADAA73929C6CDD7007C8478 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73829C6CDD7007C8478 /* HomeViewModel.swift */; };
 		FADAA73D29C6D0EF007C8478 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA73B29C6D0EF007C8478 /* HomeTableViewCell.swift */; };
 		FADAA73E29C6D0EF007C8478 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADAA73C29C6D0EF007C8478 /* HomeTableViewCell.xib */; };
+		FADAA74429C6D53F007C8478 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA74329C6D53F007C8478 /* EditContactViewController.swift */; };
+		FADAA74629C6D695007C8478 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADAA74529C6D695007C8478 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		FADAA73829C6CDD7007C8478 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		FADAA73B29C6D0EF007C8478 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		FADAA73C29C6D0EF007C8478 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		FADAA74329C6D53F007C8478 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
+		FADAA74529C6D695007C8478 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		FADAA72A29C6C4AD007C8478 /* Serecns */ = {
 			isa = PBXGroup;
 			children = (
+				FADAA73F29C6D4DB007C8478 /* Edit Contact */,
 				FADAA72E29C6C51B007C8478 /* Home */,
 				FADAA73229C6CA30007C8478 /* MainViewController.swift */,
 			);
@@ -113,6 +118,7 @@
 		FADAA72C29C6C4C4007C8478 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				FADAA74529C6D695007C8478 /* Constants.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -168,6 +174,38 @@
 				FADAA73C29C6D0EF007C8478 /* HomeTableViewCell.xib */,
 			);
 			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		FADAA73F29C6D4DB007C8478 /* Edit Contact */ = {
+			isa = PBXGroup;
+			children = (
+				FADAA74129C6D4F7007C8478 /* Model */,
+				FADAA74029C6D4EE007C8478 /* View */,
+				FADAA74229C6D4FD007C8478 /* ViewModel */,
+			);
+			path = "Edit Contact";
+			sourceTree = "<group>";
+		};
+		FADAA74029C6D4EE007C8478 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FADAA74329C6D53F007C8478 /* EditContactViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FADAA74129C6D4F7007C8478 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FADAA74229C6D4FD007C8478 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,10 +283,12 @@
 				FADAA73729C6CD0B007C8478 /* HomeModel.swift in Sources */,
 				FADAA73929C6CDD7007C8478 /* HomeViewModel.swift in Sources */,
 				FADAA73D29C6D0EF007C8478 /* HomeTableViewCell.swift in Sources */,
+				FADAA74429C6D53F007C8478 /* EditContactViewController.swift in Sources */,
 				FADAA73329C6CA30007C8478 /* MainViewController.swift in Sources */,
 				FADAA71529C6C437007C8478 /* AppDelegate.swift in Sources */,
 				FADAA71729C6C437007C8478 /* SceneDelegate.swift in Sources */,
 				FADAA73529C6CBEB007C8478 /* HomeViewController.swift in Sources */,
+				FADAA74629C6D695007C8478 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,10 +440,11 @@
 				DEVELOPMENT_TEAM = K6BJ9JXQPF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Contacts List/Info.plist";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Access is needed to save your test app friends information to your Contacts list. ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -430,10 +471,11 @@
 				DEVELOPMENT_TEAM = K6BJ9JXQPF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Contacts List/Info.plist";
+				INFOPLIST_KEY_NSContactsUsageDescription = "Access is needed to save your test app friends information to your Contacts list. ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

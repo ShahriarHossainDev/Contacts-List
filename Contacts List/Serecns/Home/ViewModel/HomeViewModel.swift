@@ -41,4 +41,13 @@ extension Friend {
             phoneNumberField = contactPhone
         }
     }
+    
+    static func defaultContacts() -> [Friend] {
+        return [
+            Friend(firstName: "Mic", lastName: "Pringle", workEmail: "mic@example.com"),
+            Friend(firstName: "Ray", lastName: "Wenderlich", workEmail: "ray@example.com"),
+            Friend(firstName: "Sam", lastName: "Davies", workEmail: "sam@example.com"),
+            Friend(firstName: "Shahriar", lastName: "Hossain", workEmail: "sam@example.com"),
+            Friend(firstName: "Greg", lastName: "Heo", workEmail: "greg@example.com")]
+    }
 }

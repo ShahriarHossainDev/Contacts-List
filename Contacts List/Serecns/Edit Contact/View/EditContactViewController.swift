@@ -94,15 +94,17 @@ class EditContactViewController: UIViewController {
             storedContact.phoneNumbers.remove(at: index)
             storedContact.phoneNumbers.insert(newPhoneNumberField, at: index)
             friend.phoneNumberField = newPhoneNumberField
+            
             // Update contacts
             saveRequest.update(storedContact)
             friend.storedContact = nil
         } else if let unsavedContact = friend.contactValue.mutableCopy() as? CNMutableContact {
+            
             // Unsaved Contact
-            let phoneNumberField = CNLabeledValue(label: CNLabelPhoneNumberMain,
-                                                  value: phoneNumberValue)
+            let phoneNumberField = CNLabeledValue(label: CNLabelPhoneNumberMain, value: phoneNumberValue)
             unsavedContact.phoneNumbers = [phoneNumberField]
             friend.phoneNumberField = phoneNumberField
+            
             // save contact
             saveRequest.add(unsavedContact, toContainerWithIdentifier: nil)
         }

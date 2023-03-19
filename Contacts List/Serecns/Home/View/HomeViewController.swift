@@ -27,6 +27,35 @@ class HomeViewController: UIViewController {
         self.contactsTabelView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
     }
     
+    // MARK: - Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        if segue.identifier == "EditContact",
+           
+           let cell = sender as? HomeTableViewCell,
+           let indexPath = contactsTabelView.indexPath(for: cell),
+           let editViewController = segue.destination as? EditContactViewController {
+            print("Going")
+            let friend = friendsList[indexPath.row]
+           
+            let store = CNContactStore()
+            
+            let predicate = CNContact.predicateForContacts(matchingEmailAddress: friend.workEmail)
+            
+            let keys = [CNContactPhoneNumbersKey as CNKeyDescriptor]
+            
+            if let contacts = try? store.unifiedContacts(matching: predicate, keysToFetch: keys),
+               let contact = contacts.first,
+               let contactPhone = contact.phoneNumbers.first {
+                
+                friend.storedContact = contact.mutableCopy() as? CNMutableContact
+                friend.phoneNumberField = contactPhone
+                friend.identifier = contact.identifier
+            }
+            editViewController.friend = friend
+        }
+    }
+    
     // MARK: - IBAction
     @IBAction func addFriendsBarButtonAction(_ sender: UIBarButtonItem) {
         

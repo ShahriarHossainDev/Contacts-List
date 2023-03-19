@@ -69,7 +69,7 @@
                 <outlet property="nameLabel" destination="tx9-g6-6j6" id="Ker-1R-uau"/>
                 <outlet property="photoImageView" destination="gcP-XF-KBp" id="cHk-a6-MeB"/>
             </connections>
-            <point key="canvasLocation" x="139" y="100"/>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </tableViewCell>
     </objects>
     <resources>

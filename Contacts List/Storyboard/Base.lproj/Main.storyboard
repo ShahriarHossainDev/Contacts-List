@@ -49,7 +49,7 @@
         <!--Edit Contact View Controller-->
         <scene sceneID="A4a-16-PjK">
             <objects>
-                <viewController storyboardIdentifier="EditContact" id="mz0-BA-xjM" customClass="EditContactViewController" customModule="Contacts_List" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditContact" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mz0-BA-xjM" customClass="EditContactViewController" customModule="Contacts_List" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zh9-Pq-6G7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

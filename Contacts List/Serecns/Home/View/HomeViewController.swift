@@ -60,6 +60,19 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 66
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let friend = friendsList[indexPath.row]
+        let contact = friend.contactValue
+        
+        let contactViewController = CNContactViewController(forUnknownContact: contact)
+        contactViewController.hidesBottomBarWhenPushed = true
+        contactViewController.allowsEditing = false
+        contactViewController.allowsActions = false
+        
+        navigationController?.pushViewController(contactViewController, animated: true)
+    }
     
 }
 

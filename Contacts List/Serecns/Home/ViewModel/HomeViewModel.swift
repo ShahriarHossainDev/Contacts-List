@@ -13,8 +13,7 @@ extension Friend: Equatable {
     static func ==(lhs: Friend, rhs: Friend) -> Bool{
         return lhs.firstName == rhs.firstName &&
         lhs.lastName == rhs.lastName &&
-        lhs.workEmail == rhs.workEmail &&
-        lhs.profilePicture == rhs.profilePicture
+        lhs.workEmail == rhs.workEmail
     }
 }
 

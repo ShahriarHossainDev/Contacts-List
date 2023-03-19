@@ -16,7 +16,7 @@ class Friend {
     var storedContact: CNMutableContact?
     var phoneNumberField: (CNLabeledValue<CNPhoneNumber>)?
     
-    init(firstName: String, lastName: String, workEmail: String, profilePicture: String?){
+    init(firstName: String, lastName: String, workEmail: String){
         self.firstName = firstName
         self.lastName = lastName
         self.workEmail = workEmail
